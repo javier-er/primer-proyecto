@@ -1,0 +1,218 @@
+:root{
+  --first-color: #d90062;
+  --max-width: 1200px;
+  --image-muñeco: url(img/Muñeco.png);
+  --font: "Raleway", sans-serif;
+  --third-alpha-color: rgba(205, 171, 216, 0.75);
+  --bacgroud-color: linear-gradient(45deg, violet, #043);
+  --color-h2: linear-gradient(45deg, magenta, yellow);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+
+/*guia para odernar las grid*/
+
+/*body>* {
+      background-color: #666;
+      border: medium solid #222;
+    }*/
+
+
+h2 {
+  font-family: var(--font);
+  text-align: center;
+  color: var(--color-h2);
+}
+p {
+  line-height: 1.6;
+  text-align: center;
+}
+
+.header {
+  grid-column: span 2;
+ grid-row: span 1; 
+}
+
+header .logo{
+  padding: 1.25rem;
+  text-align: center;
+  
+}
+
+
+
+
+  .uc-left {
+  grid-column: span 2;
+  grid-row: span 1; 
+ }
+
+ .btn{
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: inline-flex;
+  width: 160px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: grey;
+  cursor:pointer;
+  
+}
+.btn-copiar{
+  margin-right: 5rem;
+  padding: 1rem;
+}
+ .input-text{
+  border: thin solid orange;
+  resize: none;
+  border-radius: 10px;
+ 
+ }
+
+.uc-right {
+   grid-column: span 2;
+  grid-row: span 1; 
+}
+
+.redes{
+  grid-column: span 2;
+  grid-row: span 1;
+  text-align: center;
+}
+
+.text-desencrypt{
+  background-image: url(img/Muñeco.png);
+  background-repeat: no-repeat;
+  border: thin solid orange;
+  resize: none;
+  border-radius: 10px;
+ 
+
+ 
+}
+
+div{
+  justify-content: center;
+  text-align: center;
+
+}
+
+.social-media{
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.social-media a {
+  padding: 0 0.4rem;
+  text-decoration: none;
+}
+
+.social-media svg {
+
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer {
+  grid-column: span 2;
+  grid-row: span 2 ;
+  
+}  
+
+@media screen and (min-width: 1024px) {
+
+body{
+  background-color: var(--bacgroud-color);
+}
+ body{
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+ }
+
+  header{
+   grid-column: span 1;
+   grid-row: span 1;
+   
+  }
+
+  header .logo{
+    text-align: left;
+  }
+  .uc-left{
+    grid-column: 1 / 2 ;
+    grid-row: 2 /  3;
+   
+  }
+  .uc-right{
+    grid-column: 2/ 3;
+    grid-row: 2 / 3;
+
+  }
+
+.redes{
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  justify-content: center;
+  text-align: center;
+}
+
+  .input-text,.text-desencrypt{
+    width: 400px;
+    height: 400px; 
+  }
+
+   .btn-copiar{
+
+    margin-right: 10rem;
+   
+ 
+}
+
+  .footer{
+   
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+
+  }
+
+}
+
+
+
+ 
+
+
+
+
+
+  
+
+ 
+
+  
+ 
+
